@@ -1,0 +1,9 @@
+<?php
+$commodity_deta = [
+  'name' => 'onion',
+  'price' => 200,
+  'weice' => 160,
+];
+
+print_r ($commodity_deta);
+?>
