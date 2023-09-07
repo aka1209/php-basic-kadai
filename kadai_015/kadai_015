@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>課題15</title>
+</head>
+<body>
+  <?php
+  class Food {
+    // プロパティを定義する
+    private $name;
+    private $price;
+
+    // コンストラクタを定義
+  　　 public function __construct(string $name, int $price) {
+      $this->name = $name;
+      $this->price = $price;
+    }
+
+    // メソッドを定義する
+    public function show_price() {
+    }
+  }
+
+  class Animal {
+    // プロパティを定義する
+    private $name;
+    private $height;
+    private $weight;
+
+    // コンストラクタを定義
+    public function __construct(string $name, int $height, int $weight) {
+      $this->name = $name;
+      $this->height = $height;
+      $this->weight = $weight;
+    }
+
+    // メソッドを定義する
+    public function show_height() {
+    }
+  }
+
+  // インスタンス化する
+  $food = new Food('potato', 250);
+  // メソッドにアクセスし実行
+  $food->show_price();
+  // プロパティの値を出力
+  print_r($food);
+  echo '<br>';
+
+  // インスタンス化する
+  $animal = new Animal('dog', 60, 5000);
+  // メソッドにアクセスし実行
+  $animal->show_height();
+  // プロパティの値を出力
+  print_r($animal);
+  echo '<br>';
+  ?>
+</body>
